@@ -11,7 +11,7 @@ from models.pggan_discriminator import *
 
 def stylegan2(path, res):
 
-	G = StyleGAN2Generator(resolution = res)
+	G = StyleGAN2Generator(resolution = res, final_tanh=True)
 	D = StyleGAN2Discriminator(resolution = res)
 
 	weight = torch.load(path)

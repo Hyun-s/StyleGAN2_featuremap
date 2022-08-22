@@ -1,6 +1,11 @@
 # pretrained model
-*/stylegan
+**/stylegan
 
 
-__pycache__
-*/__pycache__
+/__pycache__
+/**/__pycache__
+*.png
+*.pyc
+**/**/*.csv
+
+!test.png
